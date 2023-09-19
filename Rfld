@@ -2415,9 +2415,6 @@ local RayfieldLibrary:CreateWindow = LPH_NO_VIRTUALIZE(function(Settings)
 end)
 
 
-function RayfieldLibrary:Destroy()
-	Rayfield:Destroy()
-end
 
 Topbar.ChangeSize.MouseButton1Click:Connect(function()
 	if Debounce then return end
