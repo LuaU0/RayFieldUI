@@ -873,7 +873,7 @@ local Minimise = LPH_NO_VIRTUALIZE(function()
 	Debounce = false
 end)
 
-local RayfieldLibrary:CreateWindow = LPH_NO_VIRTUALIZE(function(Settings)
+function RayfieldLibrary:CreateWindow(Settings)
 	local Passthrough = false
 	Topbar.Title.Text = Settings.Name
 	Main.Size = UDim2.new(0, 450, 0, 260)
@@ -2412,7 +2412,7 @@ local RayfieldLibrary:CreateWindow = LPH_NO_VIRTUALIZE(function(Settings)
 	wait(0.3)
 
 	return Window
-end)
+end
 
 
 
